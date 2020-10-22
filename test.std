@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name test2D
+#SBATCH --output=test2D.%J.out
+#SBATCH --error=test2D.%J.err
+#SBATCH --nodes 1  
+#SBATCH --ntasks 1 
+#SBATCH --mem=5000MB
+#SBATCH --partition=eternity
+mpirun -np 1 ./2dgel -inp ./2dinput_swim -ksp_type fgmres -ksp_pc_side right -ksp_gmres_restart 30 -ksp_max_it 60 -pat 1  1 -out test2D -fre 0.005 

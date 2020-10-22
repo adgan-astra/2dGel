@@ -1,0 +1,22 @@
+0.0   1.2821 100.0 0.5        //gam,xi,beta,z_0 
+1.0e-2    1.0e-4       //mu_n and mu_s
+0.0    0.0   0.0   //lam_n , lam_s and lambda
+NO                    //include diffusion term
+0.0e-12   0.1 1.0e-5 //delta, theta_star and dtmin
+0.675              //omega
+0.0       1.0   0.0   //start and end time, ratio
+1.0e-6              //rtol
+50                    //itmax
+0.01    0.1       //cfln and cfls
+2                 //problem dimension
+YES             //whether to use harmonic avg
+NO              //first order flux calculation
+2   2      //coarsest MG level 
+2   2     //number of pre and post smoothing
+1.0e-8  2.0         //epsilon for zero-gel test 
+0.0 12.5 64 
+0.0 25.0 128 //domain and grid size
+GMRES
+20000 20000 20000 4000 0.0 
+0.5 0.5 //thn value outside and inside channel
+YES
